@@ -1,0 +1,67 @@
+#include <Arduino.h>
+#include <Keypad.h>
+#include <Encoder.h>
+#include <HID-Project.h>
+
+
+#define ROW_0 2  // Labeled D2
+#define ROW_1 3  // Labeled D3
+#define ROW_2 4  // Labeled D4
+
+#define COL_0 5  // Labeled D5
+#define COL_1 6  // Labeled D6
+#define COL_2 7  // Labeled D7
+
+#define ENCODER_A 8  // Labeled D8
+#define ENCODER_B 9  // Labeled D9
+
+const byte ROWS = 3;
+const byte COLS = 3;
+
+// Grid layout
+char keys[ROWS][COLS] = {
+  {'E', '1', '2'},
+  {'3', '4', '5'},
+  {'6', '7', '8'}
+};
+
+byte rowPins[ROWS] = {ROW_0, ROW_1, ROW_2};
+byte colPins[COLS] = {COL_0, COL_1, COL_2};
+
+Keypad kpd = Keypad(makeKeymap(keys), rowPins, colPins, ROWS, COLS);
+Encoder myEnc(ENCODER_A, ENCODER_B);
+
+long oldPosition = -999;
+
+void setup() {
+  Keyboard.begin();
+  Consumer.begin();
+}
+
+void loop() {
+  char key = kpd.getKey();
+  
+  if (key) {
+    if (key == 'E') {
+      Consumer.write(MEDIA_PLAY_PAUSE);
+    } 
+    else if (key >= '1' && key <= '8') {
+      Keyboard.press(KEY_LEFT_GUI); 
+      Keyboard.press(KEY_LEFT_ALT);
+      Keyboard.press(key); 
+      delay(15);
+      Keyboard.releaseAll();
+    }
+  }
+
+  // 3. Encoder Rotation for System Volume
+  long newPosition = myEnc.read() / 4; 
+  if (newPosition != oldPosition) {
+    if (newPosition > oldPosition) {
+      Consumer.write(MEDIA_VOLUME_UP);
+    } else {
+      Consumer.write(MEDIA_VOLUME_DOWN);
+    }
+    oldPosition = newPosition;
+  }
+}
