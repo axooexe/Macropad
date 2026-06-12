@@ -10,14 +10,14 @@ A sleek, fully custom 3x3 macro pad built from the ground up for developers and 
 
 # Technical Specifications
 
-Hardware:
+࿔ Hardware:
 Microcontroller: Adafruit KB2040 (RP2040) via USB-C
 
 Keys: 8 MX-compatible mechanical switches (Hot-swappable)
 
 Extra Controls: 1 Rotary encoder (for volume/scrolling)
 
-Software & CAD Design:
+࿔ Software & CAD Design:
 PCB Design: KiCad
 
 Enclosure Modeling: Blender, FreeCAD...
