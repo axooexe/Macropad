@@ -11,6 +11,7 @@ A sleek, fully custom 3x3 macro pad built from the ground up for developers and 
 # Technical Specifications
 
 ࿔ Hardware:
+
 Microcontroller: Adafruit KB2040 (RP2040) via USB-C
 
 Keys: 8 MX-compatible mechanical switches (Hot-swappable)
@@ -18,6 +19,7 @@ Keys: 8 MX-compatible mechanical switches (Hot-swappable)
 Extra Controls: 1 Rotary encoder (for volume/scrolling)
 
 ࿔ Software & CAD Design:
+
 PCB Design: KiCad
 
 Enclosure Modeling: Blender, FreeCAD...
@@ -27,9 +29,12 @@ Firmware Development: VS Code
 
 # 📁 Repository Map
 
-├── 3D_Design/      # Production-ready .STL and .3MF enclosure files
-├── Firmware/       # The brainwaves (Source code & config files)
-├── Hardware/       # Production-ready Gerber files, schematics, and BOM
+├── 3D_Design
+
+├── Firmware       
+
+├── Hardware       
+
 └── README.md
 
 
