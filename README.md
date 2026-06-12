@@ -28,3 +28,19 @@ Firmware Development: VS Code
 ├── 3D_Design/      # Production-ready .STL and .3MF enclosure files
 
 └── README.md
+
+
+# Overview
+
+### PCB's schematics:
+![Schematics](/home/axolotl/Documents/micropad/final/444444.png)
+
+### PCB's footprint:
+![Footprint](/home/axolotl/Documents/micropad/final/11111.png)
+
+### PCB's 3d model:
+![front 3d model](/home/axolotl/Documents/micropad/final/2222.png)
+![back 3d model](/home/axolotl/Documents/micropad/final/33333.png)
+
+### 3d printable case:
+![3d case](/home/axolotl/Documents/micropad/final/55555.png)
