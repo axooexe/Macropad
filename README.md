@@ -35,18 +35,18 @@ Firmware Development: VS Code
 
 # Overview
 
-### PCB Schematics:
+### ★ PCB Schematics:
 <img width="651" height="840" alt="444444" src="https://github.com/user-attachments/assets/390a2d10-117d-4f43-8509-ab6152d38583" />
 
-### PCB Footprint:
+### ★ PCB Footprint:
 <img width="1003" height="805" alt="11111" src="https://github.com/user-attachments/assets/168fe07a-249c-47da-8f52-b7003b9a6e9e" />
 
-### PCB 3D Model:
+### ★ PCB 3D Model:
 <img width="1098" height="830" alt="2222" src="https://github.com/user-attachments/assets/cd11b1bb-ecff-420d-8ca2-624274b6e918" />
 <img width="1051" height="829" alt="33333" src="https://github.com/user-attachments/assets/4b076bbb-3988-4229-ae5a-2dde7e70728b" />
 
 
-### 3D Printable Case:
+### ★ 3D Printable Case:
 <img width="1235" height="645" alt="55555" src="https://github.com/user-attachments/assets/9677b4b5-09b8-418b-a4d4-56b35d142816" />
 
 Note: For the 3D case, this image is only an overview from FreeCAD, which caused its colors to disappear, but in the repository, there is a .mtl file that comes with the .obj file.
