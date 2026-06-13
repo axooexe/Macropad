@@ -26,6 +26,22 @@ Enclosure Modeling: Blender, FreeCAD...
 
 Firmware Development: VS Code
 
+# ⌨️ Layer Shortcuts
+
+Every key on this macropad fires a global system shortcut (`Super + Alt + Key`) to instantly launch or control workflows.
+
+| Key / Control | Hardware Label | Triggered Shortcut | Target Action |
+| :--- | :--- | :--- | :--- |
+| **Key 1** | `S0` | <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>0</kbd> | Launch GitHub (Browser) |
+| **Key 2** | `S1` | <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>1</kbd> | Launch Linux Terminal |
+| **Key 3** | `S2` | <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>2</kbd> | Launch Blender |
+| **Key 4** | `S3` | <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>3</kbd> | Launch Spotify |
+| **Key 5** | `S4` | <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>4</kbd> | Launch VS Code |
+| **Key 6** | `S5` | <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>5</kbd> | Launch Discord |
+| **Key 7** | `S6` | <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>6</kbd> | Launch Brave Browser |
+| **Key 8** | `S7` | <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>7</kbd> | Launch Arduino IDE |
+| **Encoder Turn** | `E1` | *Hardware Volume* | Adjust System Volume (Up / Down) |
+| **Encoder Click**| `E1` | <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>9</kbd> | System Audio Mute / Unmute |
 
 # 📁 Repository Map
 
